@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: cd docker & docker build . --file Dockerfile --tag frigate-synology-dsm7:$(date +%s)
+      run: docker build docker --file Dockerfile --tag frigate-synology-dsm7:$(date +%s)
